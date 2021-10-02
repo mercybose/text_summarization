@@ -17,6 +17,12 @@ docker images
 docker run --publish 5000:5000 image_name
 
 7) Once the server is running, open a new terminal and send a request to the text summarization API
+WINDOWS:
+
+curl http://127.0.0.1:5000/summarize -d "{\"text_to_summarize\": \"On December 31, 2019, China announced the discovery of a cluster of pneumonia cases in Wuhan. The first American case was reported on January 20, and President Donald Trump declared the U.S. outbreak a public health emergency on January 31.\"}" -H "Content-Type: application/json"
+
+MAC:
+
 curl http://127.0.0.1:5000/summarize -d "{\"text_to_summarize\": \"On December 31, 2019, China announced the discovery of a cluster of pneumonia cases in Wuhan. The first American case was reported on January 20, and President Donald Trump declared the U.S. outbreak a public health emergency on January 31.\"}" -H "Content-Type: application/json"
 
 8) Receive output as a json with keys - original_text  and summary (containing the summarized text)
