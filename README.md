@@ -6,7 +6,10 @@ Below steps must be followed to run this application in a Docker container
 2) Copy these files into a folder eg: test_docker that is accessible from the command line. 
 NOTE: If using a Windows system, ensure WSL is installed and Docker is started and create a folder in the Linux sub system within Windows.
 
-3) Navigate to this folder (if Windows, navigate using the Linux subsystem by typing \\wsl$ in the address bar)
+3) Navigate to this folder (if Windows, open command prompt and type in wsl)
+
+for Windows: Rest of steps must be run in wsl prompt 
+
 4) Create a Docker image from the Dockerfile by using command:
 docker build -t image_name .
 
